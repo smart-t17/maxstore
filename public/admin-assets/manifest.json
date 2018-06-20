@@ -1,6 +1,6 @@
 {
-  "name": "Cezerin",
-  "short_name": "Cezerin",
+  "name": "maxstore",
+  "short_name": "maxstore",
   "start_url": "/admin",
   "display": "standalone",
   "background_color": "#F9F9F9",

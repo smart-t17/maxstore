@@ -5,14 +5,14 @@
 
 ## Docker
 
-We'll use `cezerin/cezerin` image. [About image](https://github.com/cezerin/docker-cezerin).
+We'll use `maxstore/maxstore` image. [About image](https://github.com/smartmaxdev/docker-maxstore).
 
 1. Run MongoDB
 ```shell
 docker run --name store-db -v /var/www/store-db:/data/db -d mongo:latest
 ```
 
-2. Run Cezerin
+2. Run maxstore
 ```shell
 docker run -d \
 --name store \
@@ -23,8 +23,8 @@ docker run -d \
 -e DB_NAME=shop \
 -e DB_USER=user \
 -e DB_PASS=password \
--v /var/www/store:/var/www/cezerin \
-cezerin/cezerin:latest
+-v /var/www/store:/var/www/maxstore \
+maxstore/maxstore:latest
 ```
 
 Open http://localhost to see your store.  
@@ -40,7 +40,7 @@ version: '3'
 
 services:
   app:
-    image: cezerin/cezerin
+    image: maxstore/maxstore
     environment:
       - DB_HOST=db
       - DB_PORT=27017
@@ -50,7 +50,7 @@ services:
     ports:
       - 4000:80
     volumes:
-      - /var/www/store:/var/www/cezerin
+      - /var/www/store:/var/www/maxstore
     depends_on:
       - db
     restart: always
@@ -64,5 +64,5 @@ services:
     restart: always
 ```
 
-`/var/www/store` - folder with Cezerin  
+`/var/www/store` - folder with maxstore  
 `/var/www/store-db` - folder with MongoDB data

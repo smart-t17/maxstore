@@ -1,6 +1,6 @@
 import React from 'react'
 import messages from 'lib/text'
-import CezerinClient from 'cezerin-client';
+import MaxstoreClient from 'maxstore-client';
 import * as auth from 'lib/webstoreAuth'
 
 import RaisedButton from 'material-ui/RaisedButton'
@@ -37,7 +37,7 @@ export default class LoginForm extends React.Component {
       error: null
     });
 
-    CezerinClient.authorizeInWebStore(this.state.email, location.origin + '/admin')
+    MaxstoreClient.authorizeInWebStore(this.state.email, location.origin + '/admin')
     .then(({status, json}) => {
       this.setState({
         isFetching: false,

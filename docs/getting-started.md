@@ -12,8 +12,8 @@
 - MongoDB >= 3.2
 
 ```shell
-git clone https://github.com/cezerin/cezerin.git cezerin
-cd cezerin
+git clone https://github.com/smartmaxdev/maxstore.git maxstore
+cd maxstore
 npm install
 npm run build
 ```
@@ -55,4 +55,4 @@ npm start
 
 ## 4. Add default data
 
-You need to manually add default data to MongoDB. [Initialize MongoDB.](https://github.com/cezerin/cezerin/blob/master/docs/initialize-mongodb.md)
+You need to manually add default data to MongoDB. [Initialize MongoDB.](https://github.com/smartmaxdev/maxstore/blob/master/docs/initialize-mongodb.md)

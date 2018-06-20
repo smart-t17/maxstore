@@ -1,15 +1,15 @@
-# How to deploy a Cezerin on Ubuntu 16.04
+# How to deploy a maxstore on Ubuntu 16.04
 
 * [Create droplet](#1-create-droplet)
 * [Install Docker](#2-install-docker)
 * [Run MongoDB](#3-run-mongodb)
-* [Run Cezerin](#4-run-cezerin)
+* [Run maxstore](#4-run-maxstore)
 * [Add default data to MongoDB](#5-add-default-data-to-mongodb)
 * [Setup domain with](#6-setup-domain-with-cloudflare)
 * [Turn off Developer Mode](#7-turn-off-developer-mode)
 
 ## 1. Create droplet
-I'll use [DigitalOcean](https://www.digitalocean.com/) to deploy Cezerin.
+I'll use [DigitalOcean](https://www.digitalocean.com/) to deploy maxstore.
 
 1. Click **Create droplet**
  - Choose an image: `Ubuntu 16.04.4 x64`
@@ -51,7 +51,7 @@ sudo apt-get install docker-ce
 docker run --name store-db -v /var/www/store-db:/data/db -d mongo:latest
 ```
 
-## 4. Run Cezerin
+## 4. Run maxstore
 ```shell
 docker run -d \
 --name store \
@@ -60,8 +60,8 @@ docker run -d \
 -e DB_HOST=db \
 -e DB_PORT=27017 \
 -e DB_NAME=shop \
--v /var/www/store/content:/var/www/cezerin/public/content \
-cezerin/cezerin:latest
+-v /var/www/store/content:/var/www/maxstore/public/content \
+maxstore/maxstore:latest
 ```
 Check logs
 ```shell
@@ -132,12 +132,12 @@ db.orders.createIndex({
 ![CloudFlare Always HTTPS](./images/cf-alway-https.png)
 
 ## 7. Turn off Developer Mode
-By default, Cezerin is in developer mode. This means you can access API and Dashboard without access tokens.  
+By default, maxstore is in developer mode. This means you can access API and Dashboard without access tokens.  
 To turn off developer mode, you need to do:
 
  - Add access token in Dashboard or MongoDB
  - Set SMTP server from Dashboard or in `config/server.js`
  - Remove `developerMode` from `config/server.js`
  - Remove `developerMode` from `config/admin.js`
- - `npm run build` inside Cezerin container
- - `pm2 reload api` inside Cezerin container
+ - `npm run build` inside maxstore container
+ - `pm2 reload api` inside maxstore container

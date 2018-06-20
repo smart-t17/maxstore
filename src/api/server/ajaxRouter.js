@@ -1,13 +1,13 @@
 const express = require('express');
 const ajaxRouter = express.Router();
 const jwt = require('jsonwebtoken');
-const CezerinClient = require('cezerin-client');
+const MaxstoreClient = require('maxstore-client');
 const serverSettings = require('./lib/settings');
 
 const TOKEN_PAYLOAD = {email: 'store', scopes: ['admin']};
 const STORE_ACCESS_TOKEN = jwt.sign(TOKEN_PAYLOAD, serverSettings.jwtSecretKey);
 
-const api = new CezerinClient({
+const api = new MaxstoreClient({
   apiBaseUrl: serverSettings.apiBaseUrl,
   apiToken: STORE_ACCESS_TOKEN
 });

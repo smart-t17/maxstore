@@ -4,11 +4,11 @@
 * Getting Started
   - [with GitHub](./getting-started.md)
   - [with Docker](./getting-started-docker.md)
-* [How to deploy a Cezerin on Ubuntu 16.04](./how-to-deploy-a-cezerin-on-ubuntu-16-04.md)
+* [How to deploy a maxstore on Ubuntu 16.04](./how-to-deploy-a-maxstore-on-ubuntu-16-04.md)
 * [Application Structure](./structure.md)
 * [Initialize MongoDB](./initialize-mongodb.md)
 * [API Reference](./api)
-* [API Client](https://github.com/cezerin/client)
+* [API Client](https://github.com/smartmaxdev/maxstore/client)
 * Theme customization
 * Localization
 * Payment Gateway
