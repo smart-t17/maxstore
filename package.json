@@ -13,17 +13,17 @@
   "bugs": "https://github.com/smartmaxdev/maxstore/issues",
   "license": "MIT",
   "author": {
-    "name": "Restmount <jsonmount@gmail.com>",
-    "url": "https://github.com/restmount"
+    "name": "Maximiliano Ungredda <smartmaxdev@gmail.com>",
+    "url": "https://github.com/smartmaxdev"
   },
   "contributors": [
     {
-      "name": "Restmount <jsonmount@gmail.com>",
-      "url": "https://github.com/restmount"
+      "name": "Maximiliano Ungredda <smartmaxdev@gmail.com>",
+      "url": "https://github.com/smartmaxdev"
     },
     {
-      "name": "Sergey Onufrienko <sergey@onufrienko.com>",
-      "url": "https://github.com/sonufrienko"
+      "name": "Maximiliano Ungredda <smartmaxdev@gmail.com>",
+      "url": "https://github.com/smartmaxdev"
     }
   ],
   "main": "src/api/server/index.js",
@@ -56,7 +56,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.18.2",
-    "maxstore-client": "^0.31.1",
+    "cezerin-client": "^0.31.1",
     "chart.js": "^2.7.2",
     "cookie-parser": "^1.4.3",
     "css-loader": "^0.28.11",
@@ -72,6 +72,7 @@
     "lodash": "^4.17.5",
     "lru-cache": "^4.1.1",
     "material-ui": "^0.20.0",
+    "maxstore-client": "^0.31.2",
     "moment": "^2.21.0",
     "mongodb": "^3.0.4",
     "node-fetch": "^2.1.1",

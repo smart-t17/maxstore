@@ -53,7 +53,7 @@ db.emailSettings.insert({
 
 ```js
 db.settings.insert({
-  domain: 'http://localhost:3000',
+  domain: 'http://localhost:3002',
   logo_file: null,
   language: 'en',
   currency_code: 'USD',

@@ -34,9 +34,9 @@ npm install pm2 -g
 pm2 start process.json
 ```
 
-Open http://localhost:3000 to see your store.  
-Dashboard - http://localhost:3000/admin  
-API - http://localhost:3001
+Open http://localhost:3002 to see your store.  
+Dashboard - http://localhost:3002/admin  
+API - http://localhost:3003
 
 ## 3. Configuration
 
