@@ -19,7 +19,7 @@ module.exports = {
   storeBaseUrl: `http://localhost:3009`,
 
   // used by API
-  adminLoginUrl: '/adadmin/login',
+  adminLoginUrl: '/admin/login',
 
   apiListenPort: 3007,
   storeListenPort: 3009,
