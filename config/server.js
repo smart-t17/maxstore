@@ -61,5 +61,5 @@ module.exports = {
   // used by API
   orderStartNumber: 1000,
 
-  developerMode: true
+  developerMode: false
 }
