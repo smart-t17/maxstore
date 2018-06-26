@@ -27,6 +27,14 @@ app.get('/images/:entity/:id/:size/:filename', function (req, res, next) {
   req.url = newUrl;
   next();
 });
+app.all('*', function (req, res, next) {
+  // CORS headers
+  res.header("Access-Control-Allow-Origin", '*');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+  res.header('Access-Control-Allow-Credentials', 'true');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Key, Authorization');
+  next();
+});
 app.use(express.static('public/content', STATIC_OPTIONS));
 app.use('/assets', express.static('theme/assets', STATIC_OPTIONS));
 app.use('/admin-assets', express.static('public/admin-assets', STATIC_OPTIONS));
