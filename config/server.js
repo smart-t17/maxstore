@@ -10,13 +10,13 @@ const dbUrl = `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
 
 module.exports = {
   // used by Store (server side)
-  apiBaseUrl: `http://localhost:3007/api/v1`,
+  apiBaseUrl: `http://176.104.107.227/api/v1`,
 
   // used by Store (server and client side)
-  ajaxBaseUrl: `http://localhost:3007/ajax`,
+  ajaxBaseUrl: `http://176.104.107.227/ajax`,
 
   // Access-Control-Allow-Origin
-  storeBaseUrl: `http://localhost:3009`,
+  storeBaseUrl: `http://176.104.107.227`,
 
   // used by API
   adminLoginUrl: '/admin/login',
@@ -61,5 +61,5 @@ module.exports = {
   // used by API
   orderStartNumber: 1000,
 
-  developerMode: false
+  developerMode: true
 }
