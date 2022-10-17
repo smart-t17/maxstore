@@ -16,9 +16,9 @@ Single-Page Application with React server-side rendering. [Demo store](http://17
 
 ## Installation
 
-- [with GitHub](https://github.com/maxstore/maxstore/blob/master/docs/getting-started.md)
-- [with Docker](https://github.com/maxstore/maxstore/blob/master/docs/getting-started-docker.md)
-- [How to deploy a maxstore on Ubuntu 16.04](https://github.com/maxstore/maxstore/blob/master/docs/how-to-deploy-a-maxstore-on-ubuntu-16-04.md)
+- [with GitHub](https://github.com/smart-t17/maxstore/blob/master/docs/getting-started.md)
+- [with Docker](https://github.com/smart-t17/maxstore/blob/master/docs/getting-started-docker.md)
+- [How to deploy a maxstore on Ubuntu 16.04](https://github.com/smart-t17/maxstore/blob/master/docs/how-to-deploy-a-maxstore-on-ubuntu-16-04.md)
 
 ### Requirements
 * Node.js >= 8
@@ -27,7 +27,7 @@ Single-Page Application with React server-side rendering. [Demo store](http://17
 
 ## Documentation
 
-[Documentation](https://github.com/smartmaxdev/maxstore/tree/master/docs)
+[Documentation](https://github.com/smart-t17/maxstore/tree/master/docs)
 
 
 ## Application Structure
