@@ -77,7 +77,7 @@
     "mongodb": "^3.0.4",
     "node-fetch": "^2.1.1",
     "node-sass": "^4.8.3",
-    "nodemailer": "^4.6.3",
+    "nodemailer": "^6.4.16",
     "nodemailer-smtp-transport": "^2.7.4",
     "query-string": "^5.1.1",
     "react": "^16.2.0",
