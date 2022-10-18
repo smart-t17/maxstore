@@ -10,26 +10,26 @@
     "cms"
   ],
   "homepage": "https://maxstore.com",
-  "bugs": "https://github.com/smartmaxdev/maxstore/issues",
+  "bugs": "https://github.com/smart-t17/maxstore/issues",
   "license": "MIT",
   "author": {
-    "name": "Maximiliano Ungredda <smartmaxdev@gmail.com>",
-    "url": "https://github.com/smartmaxdev"
+    "name": "Tamara Eaton <teatoncoding@gmail.com>",
+    "url": "https://github.com/smart-t17"
   },
   "contributors": [
     {
-      "name": "Maximiliano Ungredda <smartmaxdev@gmail.com>",
-      "url": "https://github.com/smartmaxdev"
+      "name": "Tamara Eaton <teatoncoding@gmail.com>",
+      "url": "https://github.com/smart-t17"
     },
     {
-      "name": "Maximiliano Ungredda <smartmaxdev@gmail.com>",
-      "url": "https://github.com/smartmaxdev"
+      "name": "Tamara Eaton <teatoncoding@gmail.com>",
+      "url": "https://github.com/smart-t17"
     }
   ],
   "main": "src/api/server/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smartmaxdev/maxstore"
+    "url": "https://github.com/smart-t17/maxstore"
   },
   "scripts": {
     "compile": "babel src/store -d dist/store --quiet",
